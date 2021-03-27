@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HR Prediction Result</title>
+
+  <style>
+ body {
+   background-position: center;
+   background-repeat: repeat;
+   background-size: cover;
+  }
+
+  </style>
+      <link rel='stylesheet' href='/static/css/style.css'>
+</head>
+        <div class="topnav">
+              <a class="active" href="{{url_for('home')}}" target="_blank">Home</a>
+              <a href="{{url_for('index')}}" target="_blank" class='active'>Index</a>
+
+
+        </div>
+
+<body background="/static/images/c6.jpg">
+<script>
+console.log('its result page');
+</script>
+    <h4 id="result">
+       The predicted salary of employee is  {{prediction_text}}
+    </h4>
+
+</body>
+</html>
